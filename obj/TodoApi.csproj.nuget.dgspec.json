@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user1\\Desktop\\תכנות\\תשפו\\practycode\\TodoApi\\TodoApi.csproj": {}
+    "C:\\Users\\user1\\Desktop\\תכנות\\תשפו\\practycode\\practycode3\\TodoApi\\TodoApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user1\\Desktop\\תכנות\\תשפו\\practycode\\TodoApi\\TodoApi.csproj": {
+    "C:\\Users\\user1\\Desktop\\תכנות\\תשפו\\practycode\\practycode3\\TodoApi\\TodoApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user1\\Desktop\\תכנות\\תשפו\\practycode\\TodoApi\\TodoApi.csproj",
+        "projectUniqueName": "C:\\Users\\user1\\Desktop\\תכנות\\תשפו\\practycode\\practycode3\\TodoApi\\TodoApi.csproj",
         "projectName": "TodoApi",
-        "projectPath": "C:\\Users\\user1\\Desktop\\תכנות\\תשפו\\practycode\\TodoApi\\TodoApi.csproj",
+        "projectPath": "C:\\Users\\user1\\Desktop\\תכנות\\תשפו\\practycode\\practycode3\\TodoApi\\TodoApi.csproj",
         "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user1\\Desktop\\תכנות\\תשפו\\practycode\\TodoApi\\obj\\",
+        "outputPath": "C:\\Users\\user1\\Desktop\\תכנות\\תשפו\\practycode\\practycode3\\TodoApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
