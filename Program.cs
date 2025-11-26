@@ -55,13 +55,9 @@ namespace TodoApi
             {
                 options.AddPolicy("AllowReactApp", policy =>
                 {
-                    policy.WithOrigins(
-                              "https://todolistreact-jazd.onrender.com",
-                              "http://localhost:3000") // למקרה שעובדים מקומית
+                    policy.WithOrigins("https://todolistreact-jazd.onrender.com")
                           .AllowAnyMethod()
-                          .AllowAnyHeader()
-                          .SetIsOriginAllowed(origin => true) // פתרון נוסף
-                          .AllowCredentials();
+                          .AllowAnyHeader();
                 });
             });
 
