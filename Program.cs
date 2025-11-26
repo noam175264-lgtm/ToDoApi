@@ -99,9 +99,10 @@ namespace TodoApi
 
             var app = builder.Build();
 
+            
             //if (app.Environment.IsDevelopment() || true)
             //{
-                app.UseSwagger();
+            app.UseSwagger();
                 app.UseSwaggerUI();
             //}
 
@@ -230,7 +231,7 @@ namespace TodoApi
                 return Results.Ok(new { token = tokenString });
             });
 
-            app.MapGet("/", () => "Hello World!");
+            app.MapGet("/", () => "ToDoList Api is running now!");
 
             app.Run();
         }
