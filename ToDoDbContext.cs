@@ -31,7 +31,7 @@ public partial class ToDoDbContext : DbContext
         modelBuilder.Entity<Item>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
-            entity.ToTable("items");
+            entity.ToTable("item");
             entity.Property(e => e.Name).HasMaxLength(100);
             entity.Property(e => e.UserId).IsRequired(); // הוסף את זה
             
