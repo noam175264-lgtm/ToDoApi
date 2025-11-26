@@ -53,11 +53,15 @@ namespace TodoApi
 
             builder.Services.AddCors(options =>
             {
-                options.AddPolicy("AllowAll", policy =>
+                options.AddPolicy("AllowReactApp", policy =>
                 {
-                    policy.AllowAnyOrigin()
+                    policy.WithOrigins(
+                              "https://todolistreact-jazd.onrender.com",
+                              "http://localhost:3000") // למקרה שעובדים מקומית
                           .AllowAnyMethod()
-                          .AllowAnyHeader();
+                          .AllowAnyHeader()
+                          .SetIsOriginAllowed(origin => true) // פתרון נוסף
+                          .AllowCredentials();
                 });
             });
 
@@ -103,7 +107,7 @@ namespace TodoApi
             //if (app.Environment.IsDevelopment() || true)
             //{
             app.UseSwagger();
-                app.UseSwaggerUI();
+            app.UseSwaggerUI();
             //}
 
             app.UseCors("AllowAll");
