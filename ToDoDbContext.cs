@@ -47,7 +47,7 @@ public partial class ToDoDbContext : DbContext
             entity.HasKey(e => e.Id).HasName("PRIMARY");
             entity.ToTable("users");
             entity.Property(e => e.Username).HasMaxLength(100).IsRequired();
-            entity.Property(e => e.PasswordHash).HasMaxLength(255).IsRequired();
+            entity.Property(e => e.PasswordHash).HasMaxLength(500).IsRequired();
             entity.HasIndex(e => e.Username).IsUnique(); // Username ייחודי
         });
 
