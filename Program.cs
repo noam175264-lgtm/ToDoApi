@@ -110,7 +110,7 @@ namespace TodoApi
             app.UseSwaggerUI();
             //}
 
-            app.UseCors("AllowAll");
+            app.UseCors("AllowReactApp");
             app.UseAuthentication();
             app.UseAuthorization();
 
