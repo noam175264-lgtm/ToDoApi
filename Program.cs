@@ -57,7 +57,8 @@ namespace TodoApi
                 {
                     policy.WithOrigins("https://todolistreact-jazd.onrender.com")
                           .AllowAnyMethod()
-                          .AllowAnyHeader();
+                          .AllowAnyHeader()
+                          .AllowCredentials(); 
                 });
             });
 
